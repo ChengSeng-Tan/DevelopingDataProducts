@@ -1,0 +1,56 @@
+<style>
+.midcenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+</style>
+A Shiny App to explore Violent Crimes in US States
+========================================================
+author: Cheng Seng
+date:  11th August 2018
+autosize: true
+
+About the App
+========================================================
+
+Are you thinking of relocating to a US State and wonder if it is safe? 
+These questions may come to your mind:
+
+- What are the violent crime rates in New York State?
+
+- Which are the states that have the highest rate for Murder?
+
+- Are high violent crime rates associated with high urban populations?
+
+This Shiny App allows you to explore the data on Violent Crimes in the USA by State.
+
+This App can be viewed at <a href='https://chengseng.shinyapps.io/Shiny_App_to_explore_Violent_Crimes_in_US_States/'>Shinyapps.io</a>.
+
+It's Simple to Use
+========================================================
+<div style="align=left;width=800px">
+<ol><li>Select the measure you want to show on the USA map.</li><li>Choose the color scheme for the shading of the USA map.</li>
+<li>Mouse over the rendered USA map and you will see the crime rates for the state.</li></ol>
+<div style="font-size:80%;width:600px">If <font color=blue>% Urban Population</font> is chosen, the shading indicates percent of urban population & the hover message will show the rates for all three violent crimes.</div>
+</div>
+
+<div class="midcenter"" style="margin-left:+150px; margin-top:-100px;">
+<img src="sidepanel.png" ></img>
+</div>
+
+
+Screen shot
+========================================================
+
+![Interactive Map](map.png)
+
+References
+========================================================
+
+This data set from McNeil's monograph contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas.
+
+McNeil, D. R. (1977) Interactive Data Analysis. New York: Wiley.
+
+<h3>Documentation</h3>
+<p>ui.r and server.R code files are available on <a href='https://github.com/chengseng/DevelopingDataProducts'>GitHub</a>.
