@@ -5,6 +5,7 @@
     left: 50%;
 }
 </style>
+
 A Shiny App to explore Violent Crimes in US States
 ========================================================
 author: Cheng Seng
@@ -42,15 +43,19 @@ It's Simple to Use
 
 Screen shot
 ========================================================
+```{r pressure, echo=FALSE, fig.cap="Interactive Map", out.width = '100%'}
+knitr::include_graphics("map.png")
+```
 
-![Interactive Map](map.png)
 
 References
 ========================================================
+The data set used comes from McNeil's monograph (McNeil, D. R. (1977) Interactive Data Analysis. New York: Wiley). It contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas.
+</div>
 
-This data set from McNeil's monograph contains statistics, in arrests per 100,000 residents for assault, murder, and rape in each of the 50 US states in 1973. Also given is the percent of the population living in urban areas.
+```{r}
+data(USArrests)
+UStates<-data.frame(state=state.abb,state.name)
+```
 
-McNeil, D. R. (1977) Interactive Data Analysis. New York: Wiley.
-
-<h3>Documentation</h3>
 <p>ui.r and server.R code files are available on <a href='https://github.com/chengseng/DevelopingDataProducts'>GitHub</a>.
